@@ -1,0 +1,26 @@
+#Day 6 - Functions and Scope
+def greet():
+    print("Hello, Welcome to Python")
+greet()
+def calculate_sum(a, b):
+    print(a + b)
+calculate_sum(3, 4) 
+def divide(a, b):
+    return a/b
+result=divide(10, 5)
+print("Division:",result)
+x = "global"
+def outer_func():
+    def inner_func():
+        print(x)
+    inner_func()
+outer_func()
+x = "Honda"
+def test():
+    x = "Kiwid"
+    def car_test():
+        x = "SUV"
+        print(x)
+    car_test()
+test()        
+        
